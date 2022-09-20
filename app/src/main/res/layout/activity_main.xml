@@ -6,134 +6,108 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/photo"
-        android:layout_width="350dp"
-        android:layout_height="450dp"
-        android:src="@drawable/naruto"
-        android:layout_marginBottom="150dp"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="25dp"
+        app:strokeColor="@color/black"
+        app:cardElevation="105dp">
 
-
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="350sp"
-        android:layout_height="175sp"
-        app:cardBackgroundColor="#FFBB86FC"
-        app:cardCornerRadius="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/photo">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20sp"
-                android:layout_marginTop="3sp"
-                android:text="Criminal"
-                android:textColor="@color/white"
-                android:textSize="35sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <com.google.android.material.slider.RangeSlider
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-            </com.google.android.material.slider.RangeSlider>
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btn_play"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
-                android:elevation="50dp"
-                app:borderWidth="5dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btn_forwored"
-                app:layout_constraintStart_toEndOf="@id/btn_backwored"
-                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
-                app:tint="@color/white">
-
-            </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btn_stop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
-                android:elevation="50dp"
-                app:borderWidth="5dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/btn_forwored"
-                app:srcCompat="@drawable/ic_baseline_stop_24"
-                app:tint="@color/white"></com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btn_backwored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
-                android:elevation="50dp"
-                app:borderWidth="5dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btn_play"
-                app:layout_constraintStart_toEndOf="@id/btn_shuffle"
-                app:srcCompat="@drawable/ic_baseline_arrow_left_24"
-                app:tint="@color/white">
-
-            </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btn_forwored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
-                android:elevation="50dp"
-                app:borderWidth="5dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btn_stop"
-                app:layout_constraintStart_toEndOf="@id/btn_play"
-                app:srcCompat="@drawable/ic_baseline_arrow_right_24"
-                app:tint="@color/white">
-
-            </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btn_shuffle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
-                android:elevation="50dp"
-                app:borderWidth="5dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btn_backwored"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/ic_baseline_shuffle_24"
-                app:tint="@color/white">
-
-            </com.google.android.material.floatingactionbutton.FloatingActionButton>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/naruto" />
 
     </com.google.android.material.card.MaterialCardView>
 
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView_1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:strokeColor="@color/black"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dosti Music Video"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"/>
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            app:thumbElevation="5dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/shuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="131dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_baseline_shuffle_24"
+            app:fabCustomSize="35dp"
+            app:tint="@color/black" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/skip_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="131dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_baseline_arrow_left_24"
+            app:fabCustomSize="45dp"
+            app:tint="@color/black" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/ic_baseline_play_arrow_24"
+            app:tint="@color/black"
+            app:fabCustomSize="60dp"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/skip_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="131dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_baseline_arrow_right_24"
+            app:tint="@color/black"
+            app:fabCustomSize="45dp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="131dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_baseline_stop_24"
+            app:tint="@color/black"
+            app:fabCustomSize="35dp" />
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
